@@ -1,6 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
+import Apod from "../components/Apod";
+import Creds from "../components/Cred";
+import Header from "../components/Header";
+import Info from "../components/Info";
 import Loading from "../components/Loading";
+import Paragraph from "../components/Paragraph";
 
 export default function Home() {
   return (
@@ -13,7 +18,31 @@ export default function Home() {
 
       {/* <Loading /> */}
 
-      <main className=""></main>
+      <Header />
+
+      <main className="text-center sm:mx-16 my-8 space-y-8  sm:bg-slate-200 px-8 sm:py-16 xl:py-8 rounded-3xl lg:flex lg:items-center lg:text-left lg:space-y-0 lg:space-x-8">
+        <div className="flex w-full justify-center">
+          <div className="max-w-md space-y-4 ">
+            <Info
+              title="Venus and Mars: Passing in the Night"
+              date="2022 March 29"
+            />
+            <div className="hidden lg:block">
+              <Paragraph text="Explanation: When two planets pass on the night sky, they can usually be seen near each other for a week or more. In the case of this planetary conjunction, Venus and Mars passed within 4 degrees of each other earlier this month. The featured image was taken a few days prior, when Venus was slowing rising in the pre-dawn sky, night by night, while Mars was slowly setting. The image, a four-part mosaic, was captured in Brazil from the small town Teresópolis. Besides Venus and Mars, the morning sky now also includes the more distant planet Saturn. Of course, these conjunctions are only angular -- Venus, Mars, and Saturn continue to orbit the Sun in very different parts of our Solar System. Next week, the angle between Saturn and Mars will drop to below a quarter of a degree." />
+            </div>
+            <Creds
+              url="https://www.instagram.com/kikofairbairn/"
+              credit="Carlos Kiko Fairbairn"
+            />
+          </div>
+        </div>
+        <Apod url="https://apod.nasa.gov/apod/image/2203/VenusMars_Fairbairn_960_annotated.jpg" />
+        <div className="lg:hidden text-left w-full flex justify-center bg-slate-200 p-8 rounded-3xl">
+          <div className="max-w-md">
+            <Paragraph text="Explanation: When two planets pass on the night sky, they can usually be seen near each other for a week or more. In the case of this planetary conjunction, Venus and Mars passed within 4 degrees of each other earlier this month. The featured image was taken a few days prior, when Venus was slowing rising in the pre-dawn sky, night by night, while Mars was slowly setting. The image, a four-part mosaic, was captured in Brazil from the small town Teresópolis. Besides Venus and Mars, the morning sky now also includes the more distant planet Saturn. Of course, these conjunctions are only angular -- Venus, Mars, and Saturn continue to orbit the Sun in very different parts of our Solar System. Next week, the angle between Saturn and Mars will drop to below a quarter of a degree." />
+          </div>
+        </div>
+      </main>
 
       <footer className=""></footer>
     </div>
