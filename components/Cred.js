@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Creds({ credit, url }) {
   return (
-    <div className="tracking-tight">
+    <div className="tracking-tight text-neutral-500">
       <div className="">
         <p>Image Credit & Copyright:</p>
         <Link href={url}>
