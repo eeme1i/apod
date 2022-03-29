@@ -63,11 +63,11 @@ function Header() {
           <path d="M65.748 44.848c-1.468.978-3.017 1.999-4.649 3.065.732.355 1.315.801 1.371 1.377.104 1.082-2.07 1.605-4.035 1.38-.393-.045-.779-.148-1.147-.286-.408.263-.82.528-1.238.796-.425.273-.941.609-1.53.997v1.553c.39-.765 1.243-1.45 1.905-1.485.285-.015 1.275.9 5.355.675 1.98-.109 5.805-2.22 5.745-4.65C67.489 46.834 66.739 45.714 65.748 44.848zM54.519 48.6v1.582c.361-.241.717-.478 1.066-.709C55.036 49.091 54.647 48.734 54.519 48.6zM64.353 43.855c-.38-.225-.765-.422-1.134-.596-1.92-.9-3.93-1.065-4.35-2.28-.296-.857.54-1.65 2.58-1.62 2.04.03 3.93 1.245 4.44 1.68v-3.87c-.15.15-.808.905-1.41.78-1.155-.24-3.12-.553-5.37-.54-2.58.015-4.8 2.009-4.875 4.53-.105 3.525 2.715 4.485 4.305 5.04.164.057.351.118.554.183 1.525-.992 2.731-1.756 3.437-2.163C63.004 44.726 63.625 44.334 64.353 43.855z" />
         </g>
       </svg>
-      <div className="hidden sm:flex bg-neutral-100 px-4 py-2 rounded-3xl">
+      <div className="hidden sm:flex bg-neutral-100 px-4 py-2 rounded-3xl hover:drop-shadow-lg transition-all ease-in-out	duration-500">
         <Headerlink url="/" value="Home" />
-        <Headerlink url="/" value="Archive" />
+        <Headerlink url="/archive" value="Archive" />
         <Headerlink url="/calendar" value="Calendar" />
-        <Headerlink url="/" value="Contact" />
+        <Headerlink url="/contact" value="Contact" />
       </div>
       <div className="hidden md:flex w-12"></div>
     </div>
