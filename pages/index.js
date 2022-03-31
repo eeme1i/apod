@@ -1,11 +1,10 @@
 import Head from "next/head";
-import Image from "next/image";
-import Apod from "../components/Apod";
-import Creds from "../components/Cred";
-import Header from "../components/Header";
-import Info from "../components/Info";
+import Apod from "../components/apod-card/Apod";
+import Creds from "../components/apod-card/Cred";
+import Header from "../components/header/Header";
+import Info from "../components/apod-card/Info";
 import Loading from "../components/Loading";
-import Paragraph from "../components/Paragraph";
+import Paragraph from "../components/apod-card/Paragraph";
 
 export default function Home() {
   return (
@@ -20,7 +19,7 @@ export default function Home() {
 
       <Header />
 
-      <main className="text-center sm:mx-8 sm:my-8 space-y-8 sm:bg-neutral-100 px-8 sm:py-8 rounded-3xl lg:flex lg:items-center lg:text-left lg:space-y-0 lg:space-x-8">
+      <main className="text-center mb-8 sm:mx-8 sm:my-8 space-y-8 sm:bg-neutral-100 px-8 sm:py-8 rounded-3xl lg:flex lg:items-center lg:text-left lg:space-y-0 lg:space-x-8">
         <div className="flex lg:w-full justify-center">
           <div className="xl:max-w-xl lg:max-w-md space-y-4">
             <Info
